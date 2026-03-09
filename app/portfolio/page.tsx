@@ -38,6 +38,12 @@ const portfolioItems = [
     category: 'Wedding',
     image: '/projects/victor-wed-1.jpg',
   },
+  {
+    id: 6,
+    title: 'Wedding Celebration Styling',
+    category: 'Wedding',
+    image: '/projects/timi-wed-1.jpg',
+  },
 ]
 
 export default function PortfolioPage() {
