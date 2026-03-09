@@ -45,7 +45,7 @@ export default function AboutPage() {
               </p>
 
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                I believe that style is not about following trends blindly—it's about understanding yourself, your body, your lifestyle, and creating a wardrobe that works for YOU. Every person has a unique story, and I'm here to help you tell it through fashion.
+                I believe that style is not about following trends blindly it's about understanding yourself, your body, your lifestyle, and creating a wardrobe that works for YOU. Every person has a unique story, and I'm here to help you tell it through fashion.
               </p>
 
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
