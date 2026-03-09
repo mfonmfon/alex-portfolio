@@ -14,11 +14,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Men\'s Fashion Stylist | Elevated Style & Wardrobe Consulting',
-  description: 'Professional men\'s fashion styling services. Specializing in modern menswear, personal styling, wardrobe consulting, and image transformation for the contemporary gentleman.',
+  title: 'Alexander | Fashion Stylist Portfolio',
+  description: 'Professional fashion styling services. Specializing in modern styling, personal fashion consulting, and wardrobe design.',
   generator: 'v0.app',
   icons: {
     icon: [
+      {
+        url: '/icon.svg',
+        type: 'image/svg+xml',
+      },
       {
         url: '/icon-light-32x32.png',
         media: '(prefers-color-scheme: light)',
@@ -27,11 +31,8 @@ export const metadata: Metadata = {
         url: '/icon-dark-32x32.png',
         media: '(prefers-color-scheme: dark)',
       },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
     ],
+    shortcut: '/icon.svg',
     apple: '/apple-icon.png',
   },
 }
