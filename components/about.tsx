@@ -34,6 +34,7 @@ export default function About() {
               </h2>
             </div>
 
+
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
                 A fashion stylist specializing in men's contemporary style, with a focus on creating refined, modern looks that balance classic tailoring with current trends.
