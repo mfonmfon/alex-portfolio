@@ -9,6 +9,18 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 const portfolioItems = [
   {
+    id: 5,
+    title: 'Clients Wedding Styling',
+    category: 'Wedding',
+    image: '/projects/victor-wed-1.jpg',
+  },
+  {
+    id: 6,
+    title: 'Wedding Celebration Styling',
+    category: 'Wedding',
+    image: '/projects/timi-wed-1.jpg',
+  },
+  {
     id: 3,
     title: 'Traditional Wedding Styling',
     category: 'Wedding',
@@ -25,18 +37,6 @@ const portfolioItems = [
     title: 'Client Birthday Styling',
     category: 'Personal',
     image: '/projects/birthday-cover.jpg',
-  },
-  {
-    id: 6,
-    title: 'Wedding Celebration Styling',
-    category: 'Wedding',
-    image: '/projects/timi-wed-1.jpg',
-  },
-  {
-    id: 5,
-    title: 'Clients Wedding Styling',
-    category: 'Wedding',
-    image: '/projects/victor-wed-1.jpg',
   },
   {
     id: 1,
