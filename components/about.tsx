@@ -34,10 +34,9 @@ export default function About() {
               </h2>
             </div>
 
-
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                A fashion stylist specializing in men's contemporary style, with a focus on creating refined, modern looks that balance classic tailoring with current trends.
+                A fashion stylist that specializes in contemporary style, with a focus on creating refined, modern looks that balance classic tailoring with current trends.
               </p>
 
               <p>
@@ -45,7 +44,7 @@ export default function About() {
               </p>
 
               <p>
-                Based in [City], working with clients locally and internationally to create cohesive, wearable style solutions.
+                Based in Lagos Nigeria, working with clients locally and internationally to create cohesive, wearable style solutions.
               </p>
             </div>
           </div>
