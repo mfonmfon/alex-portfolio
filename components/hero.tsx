@@ -4,57 +4,62 @@ import { ArrowRight } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-background min-h-[90vh] flex items-center">
-      {/* Minimal geometric accent */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-5">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] border border-foreground rotate-45 translate-x-1/2 -translate-y-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] border border-foreground -rotate-12 -translate-x-1/2 translate-y-1/2"></div>
+    <section className="relative overflow-hidden bg-background min-h-screen flex items-center">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0">
+        <Image 
+          src="/images/hero/third-hero.jpeg" 
+          alt="Fashion Stylist" 
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
+      {/* Content */}
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-          {/* Left Content */}
-          <div className="lg:col-span-7 space-y-10">
-            <div className="space-y-8">
-              <div className="inline-flex items-center gap-3 text-sm tracking-widest uppercase text-muted-foreground">
-                <div className="w-12 h-px bg-accent"></div>
-                Fashion Stylist
-              </div>
+        <div className="space-y-8">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 backdrop-blur-sm border border-accent/30 -ml-4">
+            <span className="text-sm tracking-widest uppercase text-white font-medium">Fashion Stylist</span>
+          </div>
 
-              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold leading-[0.95] text-foreground tracking-tight">
-                Style.<br />
-                Refined.
-              </h1>
+          {/* Main Heading */}
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight text-white tracking-tight max-w-4xl">
+            Style.<br />
+            Refined.
+          </h1>
 
-              <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed max-w-xl">
-               From red carpet moments to everyday elegance, I create distinctive styles experiences that reflect your unique personality and vision.
-              </p>
-            </div>
+          {/* Description */}
+          <p className="text-lg sm:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-3xl">
+            From red carpet moments to everyday elegance, I create distinctive styles experiences that reflect your unique personality and vision.
+          </p>
 
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Link
               href="/portfolio"
-              className="group inline-flex items-center gap-3 text-lg font-medium text-foreground hover:text-accent transition-colors"
+              className="px-8 py-4 bg-white text-foreground rounded-lg font-semibold hover:bg-white/90 transition-all inline-flex items-center gap-2 text-lg"
             >
               Explore Work
-              <ArrowRight size={24} className="group-hover:translate-x-2 transition-transform" />
+              <ArrowRight size={20} />
+            </Link>
+            <Link
+              href="/contact"
+              className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-foreground transition-all text-lg"
+            >
+              Reach Me
             </Link>
           </div>
+        </div>
+      </div>
 
-          {/* Right - Image */}
-          <div className="lg:col-span-5">
-            <div className="relative aspect-[3/4] overflow-hidden bg-secondary border border-border">
-              <Image 
-                src="/stylist-hero.jpg" 
-                alt="Fashion Stylist" 
-                fill
-                className="object-cover"
-                priority
-              />
-              {/* Accent corner */}
-              <div className="absolute top-0 right-0 w-24 h-24 bg-accent/20"></div>
-              <div className="absolute bottom-0 left-0 w-32 h-32 border-l-2 border-b-2 border-foreground/10"></div>
-            </div>
-          </div>
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
+          <div className="w-1.5 h-3 bg-white/50 rounded-full"></div>
         </div>
       </div>
     </section>
